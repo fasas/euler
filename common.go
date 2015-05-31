@@ -12,6 +12,22 @@ const (
 	MinInt = -MaxInt - 1
 )
 
+// Min returns the smaller of x or y.
+func Min(x, y int) int {
+	if x < y {
+		return x
+	}
+	return y
+}
+
+// Max returns the larger of x or y.
+func Max(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
+}
+
 // IsPrime returns true if number n is a prime number.
 func IsPrime(n int) bool {
 	switch {
